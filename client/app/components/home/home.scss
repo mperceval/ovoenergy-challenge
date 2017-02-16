@@ -1,0 +1,30 @@
+.main-title {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.game-container {
+  text-align:center;
+}
+
+.player-buttons {
+  display:inline-block;
+  vertical-align: top;
+  border: 5px solid #599bb3;
+  -moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+  width: 330px;
+  height: 330px;
+}
+
+.message {
+  font-size: 30px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.restart {
+  text-align: center;
+}

@@ -1,0 +1,37 @@
+<div>
+  <h1 class="main-title">Rock, Paper, Scissors - M. Perceval</h1>
+  <div class="game-container">
+    <div class="player-buttons">
+      <h4>Player</h4>
+      <span>Make Your Choice...</span>
+      <Button
+        class="btn-rock"
+        text="Rock"
+        ng-click="$ctrl.onClick('ROCK')"
+        disable=$ctrl.disablePlayButtons
+        ng-disabled=$ctrl.disablePlayButtons>
+      </Button>
+      <Button
+        class="btn-paper"
+        text="Paper"
+        ng-click="$ctrl.onClick('PAPER')"
+        disable=$ctrl.disablePlayButtons
+        ng-disabled=$ctrl.disablePlayButtons>
+      </Button>
+      <Button
+        class="btn-scissors"
+        text="Scissors"
+        ng-click="$ctrl.onClick('SCISSORS')"
+        disable=$ctrl.disablePlayButtons
+        ng-disabled=$ctrl.disablePlayButtons>
+      </Button>
+    </div>
+    <AiChoice choice="{{ $ctrl.aiChoice }}"></AiChoice>
+  </div>
+  <div class="message">
+    {{ $ctrl.message }}
+  </div>
+  <div class="restart" ng-show="$ctrl.disablePlayButtons">
+    <Button class="btn-restart" text="Play Again?" ng-click="$ctrl.onRestart()"></Button>
+  </div>
+</div>

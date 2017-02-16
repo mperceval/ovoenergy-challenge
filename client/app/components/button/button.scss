@@ -1,0 +1,46 @@
+// Remove default button styling
+button {
+  margin      : 0;
+  padding     : 0;
+  border      : 0;
+  background  : transparent;
+  font-family : inherit;
+  cursor      : pointer;
+}
+
+button::-moz-focus-inner {
+  padding : 0;
+  border  : 0;
+}
+
+button:focus {outline:0;}
+
+.btn {
+  width: 200px;
+  margin-top: 20px;
+	background-color:#599bb3;
+	-moz-border-radius:8px;
+	-webkit-border-radius:8px;
+	border-radius:8px;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-size:20px;
+	font-weight:bold;
+	padding:13px 32px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #3d768a;
+}
+.btn:hover {
+	background-color:#408c99;
+}
+.btn:active {
+	position:relative;
+	top:1px;
+}
+
+.btn.disable {
+  cursor:text !important;
+  background-color: #bbbbbb !important;
+  top: 0px !important;
+}
