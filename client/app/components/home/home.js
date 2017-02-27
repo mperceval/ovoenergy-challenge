@@ -3,7 +3,7 @@ import uiRouter from 'angular-ui-router';
 import homeComponent from './home.component';
 import GameService from '../../services/game/gameservice';
 
-let homeModule = angular.module('home', [
+const homeModule = angular.module('home', [
   uiRouter
 ])
 

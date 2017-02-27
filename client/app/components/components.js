@@ -4,7 +4,7 @@ import Button from './button/button';
 import Aichoice from './aichoice/aichoice'
 
 // Set up required components
-let componentModule = angular.module('app.components', [
+const componentModule = angular.module('app.components', [
   Home,
   Button,
   Aichoice
